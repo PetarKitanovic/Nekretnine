@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="10dp">
+
+
+    <EditText
+        android:id="@+id/naziv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Unesite naziv"
+        android:inputType="textCapSentences" />
+
+    <EditText
+        android:id="@+id/opis"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Unesite opis"
+        android:inputType="textCapSentences" />
+
+    <EditText
+        android:id="@+id/adresa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Unesite adresu"
+        android:inputType="textCapSentences" />
+
+    <EditText
+        android:id="@+id/telefon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Unesite broj telefona"
+        android:inputType="phone" />
+
+    <EditText
+        android:id="@+id/kvadratura"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Unesite kvadraturu"
+        android:inputType="number|numberDecimal" />
+
+
+    <EditText
+        android:id="@+id/brojSoba"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Unesite broj soba"
+        android:inputType="number|numberDecimal" />
+
+    <EditText
+        android:id="@+id/cena"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Unesite cenu"
+        android:inputType="number|numberDecimal"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/add_nekretnina"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dodaj" />
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Odustani" />
+
+    </LinearLayout>
+
+</LinearLayout>

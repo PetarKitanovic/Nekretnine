@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/detalji"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/final_toolbar" />
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <androidx.viewpager2.widget.ViewPager2
+                    android:id="@+id/viewpager"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp" />
+
+
+                <ImageButton
+                    android:id="@+id/left_nav"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center_vertical|left"
+                    android:background="#00FFFFFF"
+                    android:src="@drawable/strelica_levo" />
+
+                <ImageButton
+                    android:id="@+id/right_nav"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center_vertical|right"
+                    android:background="#00FFFFFF"
+                    android:src="@drawable/strelica_desno" />
+
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/detalji_naziv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                tools:text="Naziv Nekretnine" />
+
+            <TextView
+                android:id="@+id/detalji_adresa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:textSize="15sp"
+                android:textStyle="italic"
+                tools:text="Kopernkova 2" />
+
+            <TextView
+                android:id="@+id/detalji_telefon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:clickable="true"
+                android:drawableEnd="@drawable/call"
+                android:textSize="15sp"
+                android:textStyle="italic"
+                tools:text="064 116 78 78" />
+
+
+            <TextView
+                android:id="@+id/detalji_kvadratura"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:textSize="15sp"
+                android:textStyle="italic"
+                tools:text="Kvadratura: 35m2" />
+
+            <TextView
+                android:id="@+id/detalji_broj_soba"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:textSize="15sp"
+                android:textStyle="italic"
+                tools:text="Broj soba: 2" />
+
+            <TextView
+                android:id="@+id/detalji_cena"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:clickable="false"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:text="Cena: 300eur" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:text="Opis:"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/detalji_opis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:textSize="15sp"
+                android:textStyle="italic"
+                tools:text="Opis nekretnine" />
+
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/drawerPane"
+            android:layout_width="280dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="start">
+
+
+            <ListView
+                android:id="@+id/left_drawer"
+                android:layout_width="280dp"
+                android:layout_height="match_parent"
+                android:background="#ffffffff"
+                android:choiceMode="singleChoice" />
+
+        </RelativeLayout>
+
+    </androidx.drawerlayout.widget.DrawerLayout>
+
+
+</LinearLayout>
